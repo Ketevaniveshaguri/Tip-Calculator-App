@@ -1,0 +1,19 @@
+.tip-percentage {
+  width: 146px;
+  height: 48px;
+  background-color: #00474b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+
+  @media (min-width: 1056px) {
+    width: 117px;
+    font-size: 24px;
+  }
+}
+.active {
+  background-color: #26c2ae;
+}

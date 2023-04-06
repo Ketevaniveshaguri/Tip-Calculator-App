@@ -1,0 +1,21 @@
+.reset-button {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 280px;
+  height: 48px;
+  margin: 10px auto;
+  background-color: #26c2ae;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:active {
+    background-color: #9fe8df;
+  }
+  @media (min-width: 1056px) {
+    width: 333px;
+    margin: 70px auto;
+  }
+}

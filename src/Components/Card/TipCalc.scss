@@ -1,0 +1,156 @@
+.card-1 {
+  padding: 30px;
+  @media (min-width: 1056px) {
+    padding: 0;
+  }
+
+  &__logo {
+    display: block;
+    width: 86px;
+    height: 53px;
+    margin: 50px auto;
+    @media (min-width: 1056px) {
+      margin-top: 110px;
+      margin-bottom: 87px;
+    }
+  }
+  &__input-with-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: #fff;
+  }
+  &__input--green-border {
+    border: 2px solid #26c2ae;
+  }
+  &__input {
+    width: 311px;
+    height: 48px;
+    text-align: end;
+    border-radius: 5px;
+    border: none;
+    background-color: #f3f9fa;
+    font-size: 2.4rem;
+    color: #00474b;
+    padding-right: 1.7rem;
+    color: #00474b;
+
+    @media (min-width: 1056px) {
+      width: 380px;
+    }
+  }
+  &__icon {
+    position: absolute;
+    margin-left: 1.9rem;
+  }
+  &__tip-percentage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    @media (min-width: 1056px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 14px;
+    }
+  }
+
+  &__custom-input {
+    font-size: 24px;
+    width: 146px;
+    margin-top: 2px;
+    height: 41px;
+    border-radius: 5px;
+    border: none;
+    background: #f3f9fa;
+    height: 48px;
+    padding-left: 40px;
+    @media (min-width: 1056px) {
+      width: 117px;
+      padding-left: 14px;
+    }
+  }
+  &__select-tip {
+    margin-bottom: 16px !important;
+  }
+  &__num-of-people,
+  &__bill,
+  &__select-tip {
+    color: #5e7a7d;
+    font-weight: 700;
+    margin-top: 32px;
+    margin-bottom: 6px;
+  }
+  &__num-of-people__error-message {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    color: #e17457;
+
+    @media (min-width: 1056px) {
+      gap: 123px;
+    }
+  }
+  &__error-message {
+    margin-top: 30px;
+    // display: none;
+    // visibility: hidden;
+  }
+}
+
+.card-2 {
+  width: 327px;
+  height: 257px;
+  background-color: #00474b;
+  margin: 0 24px 32px 24px;
+  padding: 39px 22px 24px 24px;
+  border-radius: 15px;
+  @media (min-width: 1056px) {
+    width: 413px;
+    height: 417px;
+    margin: 32px -32px 32px 48px;
+    padding: 56px 40px 40px 40px;
+  }
+  &__amount {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  p {
+    color: white;
+    // font-size: 15px;
+  }
+  &__per-person {
+    color: #7f9d9f !important;
+    margin-bottom: 25px;
+    @media (min-width: 1056px) {
+      margin-bottom: 50px;
+    }
+  }
+  &__tip-amount-value,
+  &__total-amount-value {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: -15px;
+    color: #26c2ae;
+
+    @media (min-width: 1056px) {
+      margin-left: 50px;
+      font-size: 48px;
+      margin-top: -50px;
+    }
+  }
+}
+input {
+  cursor: pointer;
+}
+.green-border {
+  border: 2px solid #26c2ae;
+}
+
+.card-1__tip-percentage.active {
+  background-color: #26c2ae;
+  color: #fff;
+}
+
+.active {
+  background-color: #26c2ae;
+}

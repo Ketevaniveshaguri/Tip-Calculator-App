@@ -1,0 +1,16 @@
+.wrapper-card {
+  background-color: #fff;
+  width: 375px;
+  height: 820px;
+  border-radius: 25px 25px 0px 0px;
+  margin: 0 auto;
+
+  @media (min-width: 1056px) {
+    width: 920px;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    padding: 45px 32px 48px 48px;
+    border-radius: 25px;
+  }
+}
