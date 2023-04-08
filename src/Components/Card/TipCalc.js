@@ -5,9 +5,9 @@ import WrapperCard from "../UI/WrapperCard";
 import "../UI/WrapperCard";
 import Button from "../UI/Button";
 import "../UI/Button.scss";
-import logo from "../image/SPLITTER.svg";
-import dolarIcon from "../image/dolarIcon.svg";
-import personIcon from "../image/personIcon.svg";
+import logo from "../img/SPLITTER.svg";
+import dolarIcon from "../img/dolarIcon.svg";
+import personIcon from "../img/personIcon.svg";
 
 const tipPercentages = [5, 10, 15, 25, 50];
 
