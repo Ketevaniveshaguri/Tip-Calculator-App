@@ -5,6 +5,9 @@ import WrapperCard from "../UI/WrapperCard";
 import "../UI/WrapperCard";
 import Button from "../UI/Button";
 import "../UI/Button.scss";
+import logo from "../image/SPLITTER.svg";
+import dolarIcon from "../image/dolarIcon.svg";
+import personIcon from "../image/personIcon.svg";
 
 const tipPercentages = [5, 10, 15, 25, 50];
 
@@ -60,7 +63,7 @@ function TipCalc() {
   return (
     <div className="container">
       <span className="font-link">
-        <img className="card-1__logo" src="../image/SPLITTER.SVG" alt="logo" />
+        <img className="card-1__logo" src={logo} alt="logo" />
         <WrapperCard className="card">
           <div className="card-1">
             <p className="card-1__bill">Bill</p>
@@ -71,11 +74,7 @@ function TipCalc() {
                 value={billAmount || ""}
                 onChange={handleBillAmountChange}
               ></input>
-              <img
-                src="../image/dolarIcon.svg"
-                className="card-1__icon"
-                alt="dolar-icon"
-              />
+              <img src={dolarIcon} className="card-1__icon" alt="dolar-icon" />
             </div>
 
             <p className="card-1__select-tip">Select Tip %</p>
@@ -116,7 +115,7 @@ function TipCalc() {
                 type="number"
               ></input>
               <img
-                src="../image/personIcon.svg"
+                src={personIcon}
                 className="card-1__icon"
                 alt="person-icon"
               ></img>
