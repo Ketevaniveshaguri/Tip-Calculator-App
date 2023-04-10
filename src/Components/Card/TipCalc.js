@@ -5,7 +5,7 @@ import WrapperCard from "../UI/WrapperCard";
 import "../UI/WrapperCard";
 import Button from "../UI/Button";
 import "../UI/Button.scss";
-import logo from "../../img/SPLITTER.SVG";
+import logo from "../../img/splitter.svg";
 import dolarIcon from "../../img/dolarIcon.svg";
 import personIcon from "../../img/personIcon.svg";
 
