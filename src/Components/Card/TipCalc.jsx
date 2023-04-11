@@ -19,7 +19,12 @@ function TipCalc() {
   const [numOfPeopleError, setNumOfPeopleError] = useState(false);
 
   const handleBillAmountChange = (e) => {
-    setBillAmount(e.target.value);
+    const value = e.target.value;
+    const min = 0;
+    const max = 5000;
+    if (value >= min && value <= max) {
+      setBillAmount(value);
+    }
   };
 
   const handleTipPercentageChange = (e) => {
@@ -41,7 +46,12 @@ function TipCalc() {
     setTipPercentage("");
   };
   const handlnumOfPeopleChange = (e) => {
-    setNumOfPeople(e.target.value);
+    const value = parseInt(e.target.value);
+    const min = 0;
+    const max = 100;
+    if (value >= min && value <= max) {
+      setNumOfPeople(value);
+    }
   };
   function handleNumOfPeopleError(e) {
     const value = e.target.value;
@@ -90,8 +100,6 @@ function TipCalc() {
                 type="number"
                 value={billAmount || ""}
                 onChange={handleBillAmountChange}
-                min={0}
-                max={100}
 
                 // placeholder="0"
               ></input>
@@ -146,7 +154,7 @@ function TipCalc() {
               <input
                 className="card-1__input "
                 value={numOfPeople || ""}
-                min="1"
+                // min="1"
                 onChange={handlnumOfPeopleChange}
                 onInput={handleNumOfPeopleError}
                 type="number"
