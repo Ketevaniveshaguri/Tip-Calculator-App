@@ -22,23 +22,9 @@
   }
   &__input--green-border {
     border: 2px solid #26c2ae;
-  }
-  &__input {
-    width: 311px;
-    height: 48px;
-    text-align: end;
     border-radius: 5px;
-    border: none;
-    background-color: #f3f9fa;
-    font-size: 2.4rem;
-    color: #00474b;
-    padding-right: 1.7rem;
-    // color: #00474b;
-
-    @media (min-width: 1056px) {
-      width: 380px;
-    }
   }
+
   &__icon {
     position: absolute;
     margin-left: 1.9rem;
@@ -52,9 +38,8 @@
       grid-gap: 14px;
     }
   }
-
   &__custom-input {
-    font-size: 24px;
+    font-size: 22px;
     width: 146px;
     margin-top: 2px;
     height: 41px;
@@ -79,6 +64,10 @@
     margin-top: 32px;
     margin-bottom: 6px;
   }
+  &__tip-percentage.active {
+    background-color: #26c2ae;
+    color: #fff;
+  }
   &__num-of-people__error-message {
     display: flex;
     align-items: center;
@@ -91,8 +80,24 @@
   }
   &__error-message {
     margin-top: 30px;
-    // display: none;
-    // visibility: hidden;
+  }
+}
+input {
+  width: 311px;
+  height: 48px;
+  text-align: end;
+  border-radius: 5px;
+  border: none;
+  background-color: #f3f9fa;
+  font-size: 2.4rem;
+  color: #00474b;
+  padding-right: 1.7rem;
+  color: #00474b;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  @media (min-width: 1056px) {
+    width: 380px;
   }
 }
 
@@ -111,12 +116,13 @@
   }
   &__amount {
     display: grid;
+    font-size: 14px;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    grid-column-gap: 80px;
   }
   p {
     color: white;
-    // font-size: 15px;
   }
   &__per-person {
     color: #7f9d9f !important;
@@ -127,16 +133,35 @@
   }
   &__tip-amount-value,
   &__total-amount-value {
-    font-size: 32px;
-    margin-left: 50px;
-    margin-top: -15px;
+    font-size: 30px;
+    margin-top: -20px;
     color: #26c2ae;
 
     @media (min-width: 1056px) {
-      margin-left: 50px;
-      font-size: 48px;
+      font-size: 45px;
       margin-top: -50px;
     }
+  }
+}
+.reset-button {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 280px;
+  height: 48px;
+  margin: 10px auto;
+  background-color: #26c2ae;
+  color: #00474b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:active {
+    background-color: #9fe8df;
+  }
+  @media (min-width: 1056px) {
+    width: 333px;
+    margin: 70px auto;
   }
 }
 input::-webkit-outer-spin-button,
@@ -144,18 +169,14 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input {
-  cursor: pointer;
-}
+
 .green-border {
   border: 2px solid #26c2ae;
 }
 
-.card-1__tip-percentage.active {
-  background-color: #26c2ae;
-  color: #fff;
-}
-
 .active {
   background-color: #26c2ae;
+}
+.error {
+  border: 2px solid #e17052;
 }

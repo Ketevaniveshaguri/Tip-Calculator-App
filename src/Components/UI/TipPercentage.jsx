@@ -3,12 +3,12 @@ import "./TipPercentage.scss";
 
 function TipPercentage(props) {
   return (
-    <div
+    <button
       className={`tip-percentage ${props.className}`}
       onClick={props.onClick}
     >
       {props.percentages}%
-    </div>
+    </button>
   );
 }
 
